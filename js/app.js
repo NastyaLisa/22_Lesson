@@ -1,6 +1,7 @@
 //Task 1
 const users = ['Mike', 'Nikola', 'Tom'];
-console.log(users[2]);
+
+console.log(users[1]);
 users[1] = 'Alex';
 
 console.log(users);
@@ -14,58 +15,26 @@ console.log(users.length);
 console.log(users)
 
 // Task 2
-// var 1
-let a = [5, 3, -4, 25, 32, -16, 6];
-let b = [21, -30, 9, 5, 12, -19, 5, 28];
+const a = [5, 3, -4, 25, 32, -16, 6, 35, 33];
+const b = [21, -30, 9, 5, 12, -19, 5, 28];
 
-let totalA = 0;
+console.log('Длина массива a:', a.length);
+console.log('Длина массива b:', b.length);
 
-for (const value of a) {
-  totalA += Number(value);
-};
-console.log('totalA', totalA);
-
-let totalB = 0;
-
-for (const value of b) {
-  totalB += Number(value);
-  }
-console.log('totalB', totalB);
-
-function maxArray(totalA, totalB) {
-   if (totalA > totalB) {
-    return `${totalA}`;
-  };
-  if (totalA < totalB) {
-    return `${totalB}`;
-  } if (totalA = totalB) {
-    return `${totalA} = ${totalB}`;
-  };
-};
-
-console.log(maxArray(totalA, totalB));
-
-// var 2
-let c = [5, 3, -4, 25, 32, -16, 6, 35, 33];
-let d = [21, -30, 9, 5, 12, -19, 5, 28];
-
-console.log('Длина массива c:', c.length);
-console.log('Длина массива d:', d.length);
-
-  function maxArray(c, d) {
-   if (c.length > d.length) {
-    return `${c.length} > ${d.length}`;
+  function maxArray(a, b) {
+   if (a.length > b.length) {
+    return `a > b: ${a.length} > ${b.length}`;
     };
     
-  if (c.length < d.length) {
-    return `${c.length} < ${d.length}`;
+  if (a.length < b.length) {
+    return `a < b: ${a.length} < ${b.length}`;
 
-  } if (c.length = d.length) {
-    return `${c.length} = ${d.length}`;
+  } if (a.length = b.length) {
+    return `a == b; ${a.length} = ${b.length}`;
   };
 };
 
-console.log(maxArray(c, d));
+console.log(maxArray(a, b));
 
 
 //Task 3
@@ -75,8 +44,6 @@ let phrase = 'I am learning JavaScript right now';
 phrase = phrase.split(' ');
 
 console.log(phrase);
-
-
 
 //Task 4
 
