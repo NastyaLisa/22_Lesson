@@ -50,11 +50,11 @@ console.log(phrase);
 let a3 = [5, 3, 8, 5, 3, 2, 1, 2];
 let b3 = [];
 
-a3.forEach(function(el, i) {
+a3.forEach(el => {
   if (b3.indexOf(el) === -1) {
     b3.push(el);
   }
-})
+});
 console.log(b3);
 
 
